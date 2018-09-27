@@ -114,8 +114,10 @@ function sortGrade(classData) {
     console.log(`--------------------`)
 }
 
+sortGrade(data)
 //학점별로 나누어 주는 함수
 function divideByGrade(classData) {
+    debugger
     const gradeArrays = ['A+', 'A', 'B+', 'B', 'C+', 'C', 'D+', 'D', 'F']
     gradeArrays.forEach(value => {
         let oneGradeData = classData.filter(object => value === object.grade)
@@ -137,7 +139,7 @@ function sortCreditOrder(gradeData) {
 //정렬된 배열을 출력해주는 함수
 function printSortedData(sortedArray) {
     sortedArray.forEach(sortedObject => {
-        let { name, grade, credit } = sortedObject
+        let { name, grade, credit } = sordtedObject
         console.log(`${name}, ${grade}, ${credit}학점`)
     })
 }
