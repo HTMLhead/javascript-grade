@@ -139,7 +139,7 @@ function sortCreditOrder(gradeData) {
 //정렬된 배열을 출력해주는 함수
 function printSortedData(sortedArray) {
     sortedArray.forEach(sortedObject => {
-        let { name, grade, credit } = sordtedObject
+        let { name, grade, credit } = sortedObject
         console.log(`${name}, ${grade}, ${credit}학점`)
     })
 }
